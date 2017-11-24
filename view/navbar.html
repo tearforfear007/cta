@@ -1,0 +1,116 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">CTA 慈濟委員暨慈誠聯誼會</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        使用者功能 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">放大字體</a></li>
+                        <li><a href="#">擴大工作區</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a data-toggle="modal" data-target="#cta-learning">CTA數位學習網</a></li>
+                        <li><a ng-click="openContactUsModal(contactUsData)">聯絡我們</a></li>
+                        <li><a data-toggle="modal" data-target="#about">關於本系統</a></li>
+                        <li><a href="#">登出</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" data-hover="dropdown">
+                        收入管理 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                        <li><a ui-sref="modifyIncomeDetails">編輯收入明細</a></li>
+                        <li><a href="#">審核收入明細</a></li>
+                        <li class="disabled"><a href="#">收入列賬</a></li>
+                        <li><a href="#">查詢收入明細</a></li>
+                        <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#">報表</a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">A01 委員聯誼金協力組收報表</a></li>
+                                <li><a href="#">A02 慈誠聯誼金協力隊收報表</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">A03 和氣收入總表</a></li>
+                                <li><a href="#">D01 和氣收入統計報表</a></li>
+                                <li><a href="#">A04 合心收入彙總表</a></li>
+                                <li><a href="#">D04 合心收入統計報表</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="#">收入檔案下載</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" data-hover="dropdown">
+                        支出管理 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                        <li><a href="#">申請/編輯活動、聯誼金</a></li>
+                        <li><a href="#">活動、聯誼金審核作業</a></li>
+                        <li><a href="#">活動、聯誼金匯款作業</a></li>
+                        <li><a href="#">活動、聯誼金支出查詢</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">申請/編輯聯誼物資</a></li>
+                        <li><a href="#">聯誼物資領取作業</a></li>
+                        <li><a href="#">聯誼物資支出查詢</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#">報表</a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">B01 和氣活動金支出報表</a></li>
+                                <li><a href="#">B02 和氣聯誼金支出報表</a></li>
+                                <li><a href="#">D02 和氣活動、聯誼金支出統計報表</a></li>
+                                <li><a href="#">B03 合心活動金支出報表</a></li>
+                                <li><a href="#">B04 合心聯誼金支出報表</a></li>
+                                <li><a href="#">D05 合心活動、聯誼金支出統計報表</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">C01 和氣賀匾請領報表</a></li>
+                                <li><a href="#">D03 和氣聯誼物資支出統計報表</a></li>
+                                <li><a href="#">C02 合心賀匾請領報表</a></li>
+                                <li><a href="#">D06 合心聯誼物資支出統計報表</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">支出檔案下載</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" data-hover="dropdown">
+                        庫存管理 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                        <li class="disabled"><a href="#">本會物資管理</a></li>
+                        <li><a href="#">管理作業區庫存管理</a></li>
+                        <li><a href="#">作業區庫存管理</a></li>
+                        <li><a href="#">物資檔案下載</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" data-hover="dropdown">
+                        系統設定 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                        <li><a href="#">維護匯款銀行</a></li>
+                        <li><a href="#">維護作業區</a></li>
+                        <li><a href="#">維護人員</a></li>
+                        <li><a href="#">維護作業區倉庫</a></li>
+                        <li><a href="#">維護倉庫管理者</a></li>
+                        <li><a href="#">維護物資安全庫存量</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>

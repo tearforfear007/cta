@@ -1,0 +1,90 @@
+<!-- CTA 數位學習網 Modal -->
+<div class="modal fade" id="cta-learning" tabindex="-1" role="dialog" aria-labelledby="cta-learning">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="cta-learning-label">CTA 數位學習網</h4>
+            </div>
+            <div class="modal-body">
+                請至慈濟“e生無量”數位學習網(<a href="http://learning.tzuchi.net/" target="_blank">http://learning.tzuchi.net/</a>) 之 “財務幹事學習專區”，學習如何操作本系統與相關的知識，並提供遠端連線及 Vmeet 通訊軟體，供您操作使用。
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" ng-click="onDownload(learning-readme)">學習網操作說明檔下載</button>
+                <button type="button" class="btn btn-link">前往學習</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 聯絡我們 Modal -->
+<script type="text/ng-template" id="contactUsModal.html">
+    <div class="modal-header">
+        <button type="button" class="close" ng-click="onCancelModal()" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="contact-us-label">聯絡我們</h4>
+    </div>
+    <div class="modal-body" id="contact-us-modal-body">
+        <!-- <div class="col-md-6 col-lg-12">
+            <div ui-grid="northGridOptions" class="grid" ui-grid-auto-resize></div>
+        </div>
+        <div class="col-md-6 col-lg-12">
+            <div ui-grid="middleGridOptions" class="grid" ui-grid-auto-resize></div>
+        </div>
+        <div class="col-md-6 col-lg-12">
+            <div ui-grid="southGridOptions" class="grid" ui-grid-auto-resize></div>
+        </div>
+        <div class="col-md-6 col-lg-12">
+            <div ui-grid="eastGridOptions" class="grid" ui-grid-auto-resize></div>
+        </div>
+        <div class="col-md-6 col-lg-12">
+            <div ui-grid="accountGridOptions" class="grid" ui-grid-auto-resize></div>
+        </div> -->
+        <div class="col-sm-6 clearfix" ng-repeat="contact in contactUsData">
+            <p>{{contact.area}} {{contact.branch}}電話：{{contact.tel}}</p>
+            <table class="table table-bordered">
+                <tr>
+                    <th>姓名</th>
+                    <th>分機</th>
+                    <th>Vmeet ID</th>
+                </tr>
+                <tr ng-repeat="member in contact.members">
+                    <td>{{member.name}}</td>
+                    <td>{{member.extension}}</td>
+                    <td>{{member.vmeetId}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</script>
+<!-- 關於本系統 Modal -->
+<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="contact-us">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="contact-us-label">關於本系統</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <p>
+                        慈濟委員、慈誠組織為一清淨修行之法親菩薩團體，彼此以智慧相結合、以愛心相扶持，攜手同心力行菩提善道，戮力於「傳承靜思法脈」與「弘揚慈濟宗門」。
+                    </p>
+                    <p>
+                        為使慈濟委員、慈誠隊員以團體之力量，和合大眾結善緣，合心協力協助慈濟會務之推動，並於法親之間互動關懷與聯誼，特成立‘慈濟委員暨慈誠聯誼會’，協助推動慈濟會務，凝聚法親互愛情誼，傳達共同之關懷與祝福。
+                    </p>
+                    <br>
+                    <p>
+                        感恩資訊處團隊成員有：奇珊菩薩、裕認菩薩、如瑩菩薩、秀愛菩薩、宗翰菩薩。
+                    </p>
+                    <p>
+                        聯誼會團隊有：吉美菩薩、桂箐菩薩。玉豔菩薩。
+                    </p>
+                    <br>
+                    <p>感恩各位菩薩的付出及兩處指導師父與各位主管的支持與指導！</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">OFF</button>
+            </div>
+        </div>
+    </div>
+</div>
